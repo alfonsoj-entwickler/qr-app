@@ -9,7 +9,7 @@ export const contentType = "image/png";
 
 // Doesn't depend on request data, so read it once at module scope.
 const logoData = await readFile(
-  join(process.cwd(), "public/icons/icon-512.png"),
+  join(process.cwd(), "public/icons/android-chrome-512x512.png"),
   "base64",
 );
 const logoSrc = `data:image/png;base64,${logoData}`;
